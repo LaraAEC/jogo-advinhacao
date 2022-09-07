@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;;
+  
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  
+  display: grid;/*diplay grid pra trabalhat seu filho main*/
+  place-items: center;/*trabalhar com os itens que tem dentro dele*/
+
+  height: 100vh;
+}
+
+body, button, input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+button {
+  background-color: #7879F1;
+
+  color: white;
+
+  font-weight: bold; /*bold=negrito=700*/
+
+  border-radius: 0 .4rem .4rem 0;
+
+  cursor: pointer;
+  transition: background .3s;
+  /*transiciona a propriedade escolhida; se pôr ALL,
+  transiciona tudo, cor, giro etc tudo que eu já tiver
+  posto no :hover*/
+}
+
+button:hover {
+  background-color: #6363ce;
+}
+
+
+.hide {
+  display: none; /*sumir com o elemento*/
+}
+
+main {
+  background: #FFFFFF;
+
+  box-shadow: 0px .2rem .4rem rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%); /*função que pega o mínimo de dois valores colocados*/
+
+ /*margin: 0 auto; alinha ao meio, mas é bem arcaico*/
+ /*Então alinhei com a técnica de pôr o display grid no
+  body que engloba o main para mexer nele como seu filho*/
+
+  margin-top: -12rem;
+  /*harmonia de ficar ao meio, mas mais pra cima que pra baixo*/
+
+  text-align: center;
+  /*conteúdo do main está alinhado ao meio*/
+}
+
+/*screen1*/
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1, p {
+  color: #34355B;
+}
+
+p {
+  opacity: 0.8;
+}
+
+form {
+  margin-top: 4.8rem;
+
+  display: flex;
+  /*para tirar a separação entre input e
+  button (filhos do form). Display flex junta tudo,
+  e depois se quisesse padronizar o espaço usaria o
+  gap*/
+
+  justify-content: center;
+  /*colocando os filhos do form no meio*/
+}
+
+input, button {
+  border: none; /*reset nas bordas*/
+
+  padding: 1.6rem;
+}
+
+input {
+  background-color: #DCE2E9;
+  width: 6rem;
+
+  border-radius: .4rem 0 0 .4rem;
+}
+
+/*screen2*/
+h2 {
+  font-size: 2.4rem;
+  font-weight: normal;/*normal=regular=400*/
+
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: .4rem;
+}
+
+
+/*Figma: https://www.figma.com/file/M0jmQ8CHh9K4AXNTi3Xtju/Jogo-Adivinha%C3%A7%C3%A3o-(Copy)?node-id=0%3A1*/
